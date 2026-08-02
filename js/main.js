@@ -1,15 +1,27 @@
-const nombreCliente = prompt("¿Cuál es tu nombre?");
-const nombreComic = prompt("¿Qué cómic querés comprar?");
+// Pre-entrega 1 - Simulador de Comiquería
 
-const cantidad = parseInt(prompt("¿Cuántas unidades querés comprar?"));
-const precioUnitario = parseFloat(prompt("¿Cuál es el precio de cada cómic?"));
+alert("¡Bienvenido a la Comiquería Central!");
 
-const totalCompra = cantidad * precioUnitario;
+let seguirComprando = true;
 
-const mensajeFinal = "Hola " + nombreCliente +
-    ", elegiste comprar " + cantidad +
-    " unidad/es de " + nombreComic +
-    ". El total de tu compra es $" + totalCompra + ".";
+while (seguirComprando) {
+    let nombreCliente = prompt("Ingrese su nombre:");
+    let nombreComic = prompt("¿Qué cómic querés comprar?");
+    let cantidad = parseInt(prompt("¿Cuántas unidades querés?"));
+    let precioUnitario = parseFloat(prompt("¿Cuál es el precio unitario?"));
 
-console.log(mensajeFinal);
-alert(mensajeFinal);
+    // Validacion para que no ingrese datos vacios o incorrectos
+    if (isNaN(cantidad) || isNaN(precioUnitario) || cantidad <= 0 || precioUnitario <= 0) {
+        alert("Por favor ingresá números válidos para la cantidad y el precio.");
+    } else {
+        let totalCompra = cantidad * precioUnitario;
+        let mensaje = "Hola " + nombreCliente + "! El total por " + cantidad + " unidad/es de '" + nombreComic + "' es $" + totalCompra;
+        
+        alert(mensaje);
+        console.log(mensaje);
+    }
+
+    seguirComprando = confirm("¿Querés consultar por otra compra?");
+}
+
+alert("¡Gracias por usar el simulador!");

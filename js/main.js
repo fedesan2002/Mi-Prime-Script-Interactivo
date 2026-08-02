@@ -1,10 +1,8 @@
-
-
 const nombreCliente = prompt("¿Cuál es tu nombre?");
 const nombreComic = prompt("¿Qué cómic querés comprar?");
 
-let cantidad = parseInt(prompt("¿Cuántas unidades querés comprar?"));
-let precioUnitario = parseFloat(prompt("¿Cuál es el precio de cada cómic?"));
+const cantidad = parseInt(prompt("¿Cuántas unidades querés comprar?"));
+const precioUnitario = parseFloat(prompt("¿Cuál es el precio de cada cómic?"));
 
 const totalCompra = cantidad * precioUnitario;
 

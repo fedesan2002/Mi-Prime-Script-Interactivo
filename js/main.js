@@ -1,6 +1,7 @@
+
 // Pre-entrega 1 - Simulador de Comiquería
 
-alert("¡Bienvenido a la Comiquería Central!");
+alert("¡Bienvenido a la Comiquería !");
 
 let seguirComprando = true;
 

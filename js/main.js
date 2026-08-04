@@ -12,17 +12,23 @@ while (seguirComprando) {
     const precioUnitario = parseFloat(prompt("¿Cuál es el precio unitario?"));
 
     // Validaciones
-    if (isNaN(cantidad) || isNaN(precioUnitario) || cantidad <= 0 || precioUnitario <= 0) {
-        alert("Por favor ingresá números válidos para la cantidad y el precio.");
-    } else {
-        const totalCompra = cantidad * precioUnitario;
-        const mensaje = "Hola " + nombreCliente + "! El total por " + cantidad + " unidad/es de '" + nombreComic + "' es $" + totalCompra;
-        
-        alert(mensaje);
-        console.log(mensaje);
-    }
+   if (
+    nombreCliente === "" ||
+    nombreComic === "" ||
+    isNaN(cantidad) ||
+    isNaN(precioUnitario) ||
+    cantidad <= 0 ||
+    precioUnitario <= 0
+) {
+    alert("Por favor, completá todos los datos correctamente.");
+} else {
+    const totalCompra = cantidad * precioUnitario;
 
-    seguirComprando = confirm("¿Querés consultar por otra compra?");
+    const mensaje = "Hola " + nombreCliente +
+        ". Compraste " + cantidad +
+        " unidad/es de " + nombreComic +
+        " y el total es de $" + totalCompra;
+
+    alert(mensaje);
+    console.log(mensaje);
 }
-
-alert("¡Gracias por usar el simulador!");

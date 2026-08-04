@@ -8,8 +8,7 @@ Simulador interactivo de compras para una comiquería.
 La idea fue hacer un simulador sencillo de compra para una comiquería. El usuario puede ingresar su nombre, elegir un cómic, indicar la cantidad que quiere comprar y el precio de cada unidad.
 
 
-
-Contenidos que utilize para realizarlo
+## Herramientas utilizadas para realizar el pre proyecto 
 
 Variables con let y const.
 prompt, alert y confirm.

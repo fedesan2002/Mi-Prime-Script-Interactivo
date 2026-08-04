@@ -12,8 +12,6 @@ La idea fue hacer un simulador sencillo de compra para una comiquería. El usuar
 
 Variables con let y const.
 prompt, alert y confirm.
-Conversión de datos con parseInt y parseFloat.
-Condicionales para validar los datos.
-Un bucle while para repetir la compra.
-Mensajes en la consola con console.log.
-
+parseInt y parseFloat.
+Un bucle while.
+Mensajes con console.log.

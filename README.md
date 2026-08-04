@@ -17,12 +17,3 @@ Condicionales para validar los datos.
 Un bucle while para repetir la compra.
 Mensajes en la consola con console.log.
 
-
-
-Archivos del proyecto
-index.html
-<<<<<<< HEAD
-js/main.js
-=======
-js/main.js
->>>>>>> 53d9a57 (Actualizado)

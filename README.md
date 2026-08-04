@@ -1,6 +1,6 @@
 # Primera pre-entrega de JavaScript 
 
-Simulador interactivo de compras para una comiquería realizado para el curso de JavaScript.
+Simulador interactivo de compras para una comiquería.
 
 ## ¿Qué hace el script?
 

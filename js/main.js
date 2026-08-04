@@ -11,7 +11,7 @@ while (seguirComprando) {
     const cantidad = parseInt(prompt("¿Cuántas unidades querés?"));
     const precioUnitario = parseFloat(prompt("¿Cuál es el precio unitario?"));
 
-    // Validacion para que no ingrese datos vacios o incorrectos
+    // Validaciones
     if (isNaN(cantidad) || isNaN(precioUnitario) || cantidad <= 0 || precioUnitario <= 0) {
         alert("Por favor ingresá números válidos para la cantidad y el precio.");
     } else {

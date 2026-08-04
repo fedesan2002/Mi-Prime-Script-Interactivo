@@ -9,7 +9,7 @@ La idea fue hacer un simulador sencillo de compra para una comiquería. El usuar
 
 
 
-Contenidos que usé
+Contenidos que utilize para realizarlo
 
 Variables con let y const.
 prompt, alert y confirm.

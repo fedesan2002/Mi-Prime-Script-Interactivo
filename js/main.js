@@ -6,21 +6,20 @@ alert("¡Bienvenido a la Comiquería!");
 let seguirComprando = true;
 
 while (seguirComprando) {
-    const nombre = prompt("Ingresá tu nombre:");
+    const usuario = prompt("Ingresá tu nombre:");
     const comic = prompt("¿Qué cómic querés comprar?");
     const cantidad = parseInt(prompt("¿Cuántas unidades querés?"));
     const precio = parseFloat(prompt("¿Cuál es el precio de cada unidad?"));
 
-    if (nombre === "" || comic === "" || isNaN(cantidad) || isNaN(precio)) {
-        alert("Ingresaste algún dato incorrecto.");
-    } else {
-        const total = cantidad * precio;
-        const mensaje = "Hola " + nombre + ", compraste " + cantidad +
-            " unidad/es de " + comic + ". Total: $" + total;
+    const total = cantidad * precio;
 
-        alert(mensaje);
-        console.log(mensaje);
-    }
+    const mensaje = "Hola " + usuario +
+        ", compraste " + cantidad +
+        " cómic/s de " + comic +
+        ". El total es $" + total;
+
+    alert(mensaje);
+    console.log(mensaje);
 
     seguirComprando = confirm("¿Querés hacer otra compra?");
 }
